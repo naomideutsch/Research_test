@@ -9,7 +9,9 @@
 # wsj0_origin=/private/home/eliyan/graph_nn/speech_separation/csr_1/
 # wsj0_wav=/private/home/eliyan/graph_nn/speech_separation/WSJ0/
 
-data=/content/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/data_whamr
+#data="/Users/naomi/Documents/University/SecondDegree/SecondYear/Research/codes/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/data_whamr"
+data="/content/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/data_whamr"
+
 stage=2  # Modify this to control to start from which stage
 # -- END
 
@@ -56,8 +58,8 @@ momentum=0
 l2=0
 # save and visualize
 checkpoint=1
-# continue_from="/private/home/eliyan/graph_nn/speech_separation/Conv-TasNet-graphnn/egs/wsj0/submission/egs/wsj0/exp/train_rnn_wider_w1_nomuldec_encrnn_multiloss_2__r8000_N128_L4_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer6_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.95_tr/final.pth.tar"
-continue_from="/private/home/eliyan/graph_nn/speech_separation/Conv-TasNet-graphnn/egs/wsj0/submission/egs/wsj0/exp/train_wham_555__r8000_N128_L8_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer8_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.92_tr/final.pth.tar"
+#continue_from="/Users/naomi/Documents/University/SecondDegree/SecondYear/Research/codes/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/exp/train_wham_555__r8000_N128_L8_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer8_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.92_tr/final.pth.tar"
+continue_from="/content/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/exp/train_wham_555__r8000_N128_L8_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer8_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.92_tr/final.pth.tar"
 print_freq=10
 visdom=0
 visdom_epoch=0
@@ -83,7 +85,7 @@ tag="icml_submisson" # tag for managing experiments.
 
 ngpu=1  # always 1
 
-. utils/parse_options.sh || exit 1;
+. ./utils/parse_options.sh || exit 1;
 . ./cmd.sh
 . ./path.sh
 
