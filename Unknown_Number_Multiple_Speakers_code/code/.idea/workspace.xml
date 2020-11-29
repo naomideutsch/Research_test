@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4c81f8c-ff23-499b-b244-e0abc9cf6634" name="Default Changelist" comment="fix data path">
+    <list default="true" id="a4c81f8c-ff23-499b-b244-e0abc9cf6634" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/egs/wsj0/run_mloss.sh" beforeDir="false" afterPath="$PROJECT_DIR$/egs/wsj0/run_mloss.sh" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
       <updated>1603788741197</updated>
       <workItem from="1603788743671" duration="46559000" />
       <workItem from="1606646197920" duration="874000" />
-      <workItem from="1606660635844" duration="4211000" />
+      <workItem from="1606660635844" duration="4366000" />
     </task>
     <task id="LOCAL-00001" summary="fix data path">
       <created>1606661115160</created>
@@ -133,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606665692524</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix data path">
+      <created>1606665807813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606665807813</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix data path">
+      <created>1606665879988</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606665879988</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
