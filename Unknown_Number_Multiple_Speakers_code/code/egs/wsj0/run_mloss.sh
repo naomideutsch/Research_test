@@ -153,7 +153,7 @@ if [ $stage -le 2 ]; then
     --lr $lr \
     --momentum $momentum \
     --l2 $l2 \
-    --save_folder ${expdir} \
+    --save_folder "${expdir}" \
     --checkpoint $checkpoint \
     --continue_from "$continue_from" \
     --print_freq ${print_freq} \
