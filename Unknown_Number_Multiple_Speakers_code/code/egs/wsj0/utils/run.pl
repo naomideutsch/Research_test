@@ -197,6 +197,10 @@ for ($jobid = $jobstart; $jobid <= $jobend; $jobid++) {
       $cmd =~ s/$jobname/$jobid/g;
       $logfile =~ s/$jobname/$jobid/g;
     }
+
+    print("Naomi");
+    print("$logfile");
+
     system("mkdir -p `dirname $logfile` 2>/dev/null");
     open(F, ">$logfile") || die "run.pl: Error opening log file $logfile";
     print F "# " . $cmd . "\n";
