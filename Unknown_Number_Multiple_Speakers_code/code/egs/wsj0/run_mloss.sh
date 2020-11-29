@@ -159,7 +159,7 @@ if [ $stage -le 2 ]; then
     --l2 $l2 \
     --save_folder "${expdir}" \
     --checkpoint $checkpoint \
-    --continue_from \"${continue_from}\" \
+    --continue_from "${continue_from}" \
     --print_freq ${print_freq} \
     --visdom $visdom \
     --visdom_epoch $visdom_epoch \

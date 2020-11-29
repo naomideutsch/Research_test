@@ -125,6 +125,10 @@ parser.add_argument('--loss_every', default=2, type=float,
 
 def main(args):
     print('BLABLBLABABL')
+
+    print("Naomi Zaken")
+    print(f"continue_from: {continue_from}")
+
     # Construct Solver
     # data
     tr_dataset = AudioDataset(args.train_dir, args.batch_size,
