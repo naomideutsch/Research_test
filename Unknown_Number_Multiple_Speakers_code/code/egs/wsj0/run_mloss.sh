@@ -9,7 +9,7 @@
 # wsj0_origin=/private/home/eliyan/graph_nn/speech_separation/csr_1/
 # wsj0_wav=/private/home/eliyan/graph_nn/speech_separation/WSJ0/
 
-data=/private/home/eliyan/graph_nn/speech_separation/wsj0-wv1/wav8k/min/
+data=/Users/naomi/Documents/University/SecondDegree/SecondYear/Research/codes/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/data_whamr
 stage=2  # Modify this to control to start from which stage
 # -- END
 
