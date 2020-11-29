@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4c81f8c-ff23-499b-b244-e0abc9cf6634" name="Default Changelist" comment="" />
+    <list default="true" id="a4c81f8c-ff23-499b-b244-e0abc9cf6634" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/egs/wsj0/run_mloss.sh" beforeDir="false" afterPath="$PROJECT_DIR$/egs/wsj0/run_mloss.sh" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +19,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1jSDkIU7wUaKPakgSMpKAGT6VGJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -46,11 +55,63 @@
       <updated>1603788741197</updated>
       <workItem from="1603788743671" duration="46559000" />
       <workItem from="1606646197920" duration="874000" />
+      <workItem from="1606660635844" duration="3487000" />
     </task>
+    <task id="LOCAL-00001" summary="fix data path">
+      <created>1606661115160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606661115160</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix data path">
+      <created>1606661685952</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606661685952</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix data path">
+      <created>1606662810439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606662810439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix data path">
+      <created>1606663724977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606663724977</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix data path">
+      <created>1606663953808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606663953808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix data path" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix data path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
