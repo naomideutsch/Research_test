@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4c81f8c-ff23-499b-b244-e0abc9cf6634" name="Default Changelist" comment="" />
+    <list default="true" id="a4c81f8c-ff23-499b-b244-e0abc9cf6634" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/egs/wsj0/run_mloss.sh" beforeDir="false" afterPath="$PROJECT_DIR$/egs/wsj0/run_mloss.sh" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
       <updated>1603788741197</updated>
       <workItem from="1603788743671" duration="46559000" />
       <workItem from="1606646197920" duration="874000" />
-      <workItem from="1606660635844" duration="5804000" />
+      <workItem from="1606660635844" duration="6159000" />
     </task>
     <task id="LOCAL-00001" summary="fix data path">
       <created>1606661115160</created>
@@ -228,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606667154272</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix data path">
+      <created>1606667510880</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606667510880</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
