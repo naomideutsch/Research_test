@@ -127,7 +127,7 @@ def main(args):
     print('BLABLBLABABL')
 
     print("Naomi Zaken")
-    print(f"continue_from: {continue_from}")
+    print(f"continue_from: {args.continue_from}")
 
     # Construct Solver
     # data
