@@ -60,7 +60,7 @@ l2=0
 checkpoint=1
 #continue_from="/Users/naomi/Documents/University/SecondDegree/SecondYear/Research/codes/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/exp/train_wham_555__r8000_N128_L8_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer8_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.92_tr/final.pth.tar"
 #continue_from="/content/Research_test/Unknown_Number_Multiple_Speakers_code/code/egs/wsj0/exp/train_wham_555__r8000_N128_L8_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer8_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.92_tr/final.pth.tar"
-continue_from="/content/drive/My Drive/Colab Notebooks/Research_Test"
+continue_from="/content/drive/My Drive/Colab Notebooks/Research_Test/exp/train_wham_555__r8000_N128_L8_B128_H512_P3_X25_R4_C2_gLN_causal0_relu_epoch1000000_half1_norm5_bs2_worker4_adam_lr5e-4_mmt0_rnn_b_layer8_segment4_l20_lw1.0_tflip1_loss_every1_lr_decay0.92_tr/final.pth.tar"
 
 print_freq=10
 visdom=0
@@ -116,7 +116,8 @@ if [ $stage -le 1 ]; then
   preprocess.py --in-dir $data --out-dir $dumpdir --sample-rate $sample_rate
 fi
 
-expdir=/content/drive/My Drive/Colab Notebooks/Research_Test/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_`basename $train_dir`
+test="/content/drive/My Drive/Colab Notebooks/Research_Test"
+expdir=test/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_`basename $train_dir`
 echo $expdir
 
 if [ $stage -le 2 ]; then
