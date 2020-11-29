@@ -115,8 +115,9 @@ if [ $stage -le 1 ]; then
   preprocess.py --in-dir $data --out-dir $dumpdir --sample-rate $sample_rate
 fi
 
+COLAB_DIR_PATH="/content/drive/My\ Drive/Colab\ Notebooks/Research_Test"
 
-expdir=/content/drive/'My Drive'/'Colab Notebooks'/Research_Test/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_`basename $train_dir`
+expdir="${COLAB_DIR_PATH}/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_`basename $train_dir`"
 echo $expdir
 
 if [ $stage -le 2 ]; then
