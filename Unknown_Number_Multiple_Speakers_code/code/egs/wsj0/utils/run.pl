@@ -198,8 +198,8 @@ for ($jobid = $jobstart; $jobid <= $jobend; $jobid++) {
       $logfile =~ s/$jobname/$jobid/g;
     }
 
-    print("Naomi\n\n");
-    print("$logfile\n\n");
+    print("Logfile path\n");
+    print("$logfile\n");
 
     system("mkdir -p `dirname $logfile` 2>/dev/null");
     open(F, ">$logfile") || die "run.pl: Error opening log file $logfile";
@@ -211,7 +211,7 @@ for ($jobid = $jobstart; $jobid <= $jobend; $jobid++) {
 
     # Pipe into bash.. make sure we're not using any other shell.
     open(B, "|bash") || die "run.pl: Error opening shell command";
-    print B "( " . $cmd . ") 2>>$logfile >> $logfile";
+    print B "( " . $cmd . ") 2>>\"$logfile\" >> \"$logfile\"";
     close(B);                   # If there was an error, exit status is in $?
     $ret = $?;
 
