@@ -126,7 +126,7 @@ echo $expdir
 
 if [ $stage -le 2 ]; then
   echo "Stage 2: Training"
-  ${cuda_cmd} --gpu ${ngpu} ${expdir}/train.log \
+  ${cuda_cmd} --gpu ${ngpu} "${expdir}/train.log" \
     CUDA_VISIBLE_DEVICES="$id" \
     train_mloss.py \
     --train_dir $train_dir \
