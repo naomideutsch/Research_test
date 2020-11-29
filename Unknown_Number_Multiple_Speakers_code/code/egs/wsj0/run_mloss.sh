@@ -117,13 +117,13 @@ fi
 
 COLAB_DIR_PATH=/content/drive/My\ Drive/Colab\ Notebooks/Research_Test
 
-expdir="${COLAB_DIR_PATH}/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_aviv"
-# expdir="${COLAB_DIR_PATH}/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_`basename $train_dir`"
+#expdir=${COLAB_DIR_PATH}/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_aviv
+expdir=${COLAB_DIR_PATH}/exp/train_${tag}_r${sample_rate}_N${N}_L${L}_C${C}_${norm_type}_causal${causal}_${mask_nonlinear}_epoch${epochs}_half${half_lr}_norm${max_norm}_bs${batch_size}_worker${num_workers}_${optimizer}_lr${lr}_mmt${momentum}_rnn_b_layer${rnn_b_layer}_segment${segment}_l2${l2}_lw${lw}_tflip${tflip}_loss_every${loss_every}_lr_decay${lr_decay}_`basename $train_dir`
 echo $expdir
 
 if [ $stage -le 2 ]; then
   echo "Stage 2: Training"
-  ${cuda_cmd} --gpu ${ngpu} ${expdir}/train.log \
+  ${cuda_cmd} --gpu ${ngpu} "${expdir}/train.log" \
     CUDA_VISIBLE_DEVICES="$id" \
     train_mloss.py \
     --train_dir $train_dir \
