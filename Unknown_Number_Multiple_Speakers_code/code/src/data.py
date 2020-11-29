@@ -42,7 +42,7 @@ class AudioDataset(data.Dataset):
         s1_json = os.path.join(json_dir, 's1.json')
         s2_json = os.path.join(json_dir, 's2.json')
         with open(mix_json, 'r') as f:
-            mix_infos = json.load(f, f.decode("utf-8"))
+            mix_infos = json.load(f)
         with open(s1_json, 'r') as f:
             s1_infos = json.load(f)
         with open(s2_json, 'r') as f:
