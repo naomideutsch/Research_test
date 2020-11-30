@@ -126,8 +126,8 @@ parser.add_argument('--loss_every', default=2, type=float,
 def main(args):
     print('BLABLBLABABL')
 
-    print("Naomi Zaken")
-    print(f"continue_from: {args.continue_from}")
+    print("\nNaomi Zaken")
+    print(f"continue_from: {args.continue_from} \n")
 
     # Construct Solver
     # data
