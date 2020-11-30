@@ -14,6 +14,10 @@ class Solver(object):
     def __init__(self, data, model, optimizer, args):
         self.tr_loader = data['tr_loader']
         self.cv_loader = data['cv_loader']
+
+        print(self.tr_loader.type())
+        print(self.tr_loader.shape)
+
         self.model = model
         self.optimizer = optimizer
 
@@ -170,8 +174,6 @@ class Solver(object):
         total_loss = 0
 
         data_loader = self.tr_loader if not cross_valid else self.cv_loader
-
-        #print(f'data loader size {data_loader.size()}')
 
         # visualizing loss using visdom
         if self.visdom_epoch and not cross_valid:
