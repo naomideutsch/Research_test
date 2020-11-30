@@ -15,7 +15,7 @@ class Solver(object):
         self.tr_loader = data['tr_loader']
         self.cv_loader = data['cv_loader']
 
-        print(len(self.tr_loader))
+        print(f"len = {len(self.tr_loader)}")
 
         self.model = model
         self.optimizer = optimizer
