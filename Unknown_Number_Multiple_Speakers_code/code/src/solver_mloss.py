@@ -171,6 +171,8 @@ class Solver(object):
 
         data_loader = self.tr_loader if not cross_valid else self.cv_loader
 
+        print(f'data loader size {data_loader.size()}')
+
         # visualizing loss using visdom
         if self.visdom_epoch and not cross_valid:
             vis_opts_epoch = dict(title=self.visdom_id + " epoch " + str(epoch),
