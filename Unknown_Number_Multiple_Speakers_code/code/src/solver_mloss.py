@@ -15,8 +15,7 @@ class Solver(object):
         self.tr_loader = data['tr_loader']
         self.cv_loader = data['cv_loader']
 
-        print(self.tr_loader.type())
-        print(self.tr_loader.shape)
+        print(len(self.tr_loader))
 
         self.model = model
         self.optimizer = optimizer
